@@ -1,0 +1,19 @@
+##################################################################
+# README: PubMed                                                 #
+#                                                                #
+# James Staley                                                   #
+# University of Bristol                                          #
+# james.staley@bristol.ac.uk                                     #
+##################################################################
+
+# Search terms
+(epigenome-wide) OR (epigenome wide) OR (EWAS) OR (genome-wide AND methylation) OR (genome wide AND methylation)
+
+# Program files
+- pubmed - python command line tool to convert the text file of results from PubMed to an excel spreadsheet.
+
+# Process
+1. Query PubMed using the search terms in the andanced toolbar setting.
+2. Download results in text format (with abstract).
+3. Use pubmed to create the excel spreadsheet:
+./pubmed --file=pubmed_result.txt
